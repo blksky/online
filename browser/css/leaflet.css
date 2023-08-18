@@ -503,7 +503,8 @@ a.leaflet-control-buttons:hover:first-child {
 	border-radius: 12px;
 }
 .leaflet-popup-content {
-	margin: 13px 19px;
+	/*margin: 13px 19px;*/
+	margin: 2px;
 	line-height: 1.5em;
 	font-size: var(--default-font-size);
 }
@@ -531,8 +532,10 @@ a.leaflet-control-buttons:hover:first-child {
 	overflow: hidden;
 }
 .leaflet-popup-tip {
-	width: 17px;
-	height: 17px;
+	/*width: 17px;*/
+	/*height: 17px;*/
+	width: 13px;
+	height: 13px;
 	padding: 1px;
 
 	margin: -10px auto 0;
@@ -659,12 +662,9 @@ a.leaflet-control-buttons:hover:first-child {
 }
 
 .leaflet-cursor-header {
-	background: black;
-	height: 10px;
-	margin-top: -10px;
+	background:black;height:18px;margin-top:-18px;font-size:12px;
 	pointer-events: none;
 	color: white;
-	font-size: 9px;
 }
 
 div.leaflet-cursor-container:hover > .leaflet-cursor-header {
@@ -856,6 +856,7 @@ input.clipboard {
 	width: 100%;
 	margin: 0 0 4px;
 	text-align: center;
+	display: none;
 }
 
 .leaflet-progress-spinner-canvas {

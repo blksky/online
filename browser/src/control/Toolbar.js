@@ -626,9 +626,9 @@ L.Map.include({
 		if (window.ThisIsAMobileApp) {
 			productName = window.MobileAppName;
 		} else {
-			productName = (typeof brandProductName !== 'undefined') ? brandProductName : 'Collabora Online Development Edition (unbranded)';
+			productName = (typeof brandProductName !== 'undefined') ? brandProductName : '知识中台文档编辑器';
 		}
-		var productURL = (typeof brandProductURL !== 'undefined') ? brandProductURL : 'https://collaboraonline.github.io/';
+		var productURL = (typeof brandProductURL !== 'undefined') ? brandProductURL : '';
 
 		content.querySelector('#product-name').innerText = productName;
 		content.classList.add('product-' + productName.split(/[ ()]+/).join('-').toLowerCase());

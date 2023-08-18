@@ -5,7 +5,7 @@
 
 /* global app _ */
 L.Map.mergeOptions({
-	welcome: true
+	welcome: false
 });
 
 L.Map.Welcome = L.Handler.extend({

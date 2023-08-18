@@ -1,3 +1,5 @@
+#Help-tab-label,#menu-help{display: none;}
+
 #main-menu {
 	top: 0;
 	height: auto;
@@ -17,6 +19,8 @@
 #document-header {
 	position: relative;
 	background: transparent;
+	width:10px!important;
+	display: none;
 }
 /*avoid multiple document-headers in readonly mode*/
 .main-nav.hasnotebookbar.readonly > #main-menu #document-header {
@@ -26,6 +30,7 @@
 	position: relative;
 	width: 30px;
 	height: 30px;
+	display: none;
 }
 
 .document-title {

@@ -11,7 +11,7 @@ m4_ifelse(IOSAPP,[true],
 <!-- Related to issue #5841: the iOS app sets the base text direction via the "dir" parameter -->
 <html dir="" style="height:100%"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" data-theme="%UI_THEME%">
 ,
-<html %UI_RTL_SETTINGS% style="height:100%"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html %UI_RTL_SETTINGS% style="height:100%;overflow:hidden;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 )m4_dnl
 <title>Online Editor</title>
 <meta charset="utf-8">
@@ -209,7 +209,7 @@ m4_ifelse(MOBILEAPP,[true],
 )m4_dnl
 </head>
 
-  <body style="user-select: none;height:100%;display:flex;flex-direction:column">
+  <body style="visibility: hidden;user-select: none;height:100%;display:flex;flex-direction:column">
     <!--The "controls" div holds map controls such as the Zoom button and
         it's separated from the map in order to have the controls on the top
         of the page all the time.
@@ -429,6 +429,9 @@ if (window.mode.isMobile()) {
 }
 document.getElementsByTagName("head")[[0]].appendChild(link);
 document.getElementsByTagName("head")[[0]].appendChild(brandingLink);
+setTimeout(()=>{
+  document.body.style.visibility = 'visible';
+}, 1000);
 </script>
 
 m4_ifelse(MOBILEAPP,[true],

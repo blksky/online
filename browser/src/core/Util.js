@@ -216,7 +216,7 @@ L.Util = {
 
 	getProduct: function () {
 		var brandFAQURL = (typeof brandProductFAQURL !== 'undefined') ?
-		    brandProductFAQURL : 'https://collaboraonline.github.io/post/faq/';
+		    brandProductFAQURL : '';
 		if (window.feedbackUrl && window.buyProductUrl) {
 			var integratorUrl = encodeURIComponent(window.buyProductUrl);
 			brandFAQURL = window.feedbackUrl;
