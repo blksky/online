@@ -662,7 +662,10 @@ a.leaflet-control-buttons:hover:first-child {
 }
 
 .leaflet-cursor-header {
-	background:black;height:18px;margin-top:-18px;font-size:12px;
+	background: black;
+	height: 18px;
+	margin-top: -18px;
+	font-size: 12px;
 	pointer-events: none;
 	color: white;
 }

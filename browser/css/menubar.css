@@ -19,7 +19,7 @@
 #document-header {
 	position: relative;
 	background: transparent;
-	width:10px!important;
+	width: 10px !important;
 	display: none;
 }
 /*avoid multiple document-headers in readonly mode*/
