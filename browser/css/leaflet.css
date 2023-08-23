@@ -503,7 +503,6 @@ a.leaflet-control-buttons:hover:first-child {
 	border-radius: 12px;
 }
 .leaflet-popup-content {
-	/*margin: 13px 19px;*/
 	margin: 2px;
 	line-height: 1.5em;
 	font-size: var(--default-font-size);
@@ -532,8 +531,6 @@ a.leaflet-control-buttons:hover:first-child {
 	overflow: hidden;
 }
 .leaflet-popup-tip {
-	/*width: 17px;*/
-	/*height: 17px;*/
 	width: 13px;
 	height: 13px;
 	padding: 1px;

@@ -1,4 +1,6 @@
-#Help-tab-label,#menu-help{display: none;}
+#Help-tab-label, #menu-help {
+	display: none;
+}
 
 #main-menu {
 	top: 0;
